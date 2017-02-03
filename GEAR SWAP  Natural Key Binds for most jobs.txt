@@ -1,0 +1,14 @@
+F9 = Cycles through TP (Engaged) Mode SET
+F10 = Equips Defensive Mode SET PHYSICAL (PDT EVA HP Reraise Charm)
+F11 = Equips Defensive Mode Set MAGIC    (MDT)
+F12 = INFORMATION
+
+ALT + F9 = Cycles through Ranged Mode
+ALT + F10 = Toggles Kiting Mode (ON/OFF)
+ALT + F11 = Cycles through Extra Defense Mode
+ALT + F12 = Removes Defensive Sets and brings you back to Normal Swap Style
+
+CTRL + F9 = Cycles through Hybid Mode
+CTRL + F10 = Cycles through Defensive Mode PHYSICAL
+CTRL + F11 = Cycles through Casting Mode
+CTRL + F12 = Cycles through Idle Mode

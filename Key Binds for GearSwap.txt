@@ -1,0 +1,19 @@
+    Ctrl-F8 : Cycle through available pet food options.
+    Alt-F8 : Cycle through correlation modes for pet attacks.
+    Alt-F7 : Cycle through PET MODES
+    Ctrl-F7 : Cycle through JUG PETS
+
+
+F9 = Cycles through ur TP SET
+F10 = PDT SET (Defensive Sets 1) (For your PET as well Once he ENGAGES and you are IDLE)
+F11 = MDT SET (For your PET as well Once he ENGAGES and you are IDLE)
+F12 =  Shows what sets u got on
+
+ALT + F9 = Cycles through ur RANGED MODE
+ALT + F10 = Trogles on/off  KITING MODE
+ALT + F12 = Removes PDT/MDT SETS (Brings u back to normal IDLE  or TP SET)
+
+CTRL + F9 = Cycles through ur  Hybird MODE (Evasion) (PDT) (Normal)
+CTRL + F10 =  Cycles between ur Defensive SETS 1 (PDT/EVA)
+CTRL + F11 = Cycles through ur CASTING MODE
+CTRL + F12 = Cycles through ur IDLE MODE 
