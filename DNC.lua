@@ -121,13 +121,13 @@ function init_gear_sets()
     sets.precast.Jig = {legs="Horos Tights",feet="Maxixi Toe Shoes +1"}
 
    sets.precast.Step = {ammo="Honed Tathlum",
-	head="Maxixi Tiara +1",hands="Maxixi Bangles +1",feet="Horos Shoes +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",waist="Kentarch Belt",back="Archon Cape"}
+	head="Maxixi Tiara +1",hands="Maxixi Bangles +1",feet="Horos Shoes +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",waist="Windbuffet Belt +1",back="Archon Cape"}
 	
 	sets.precast.Step['Feather Step'] = set_combine(sets.precast.Step,  {hands="Maxixi Bangles +1",feet="Maculele Toeshoes"})
 
 	--Flourish
 	sets.precast.Flourish1 = {ammo="Honed Tathlum",
-	waist="Kentarch Belt",back="Archon Mantle",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1"}
+	waist="Windbuffet Belt +1",back="Archon Mantle",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1"}
 	
 	sets.precast.Flourish1['Violent Flourish'] =  set_combine(sets.precast.Flourish1,   {ammo="Honed Tathlum",
 	ear1="Digni. Earring",ear2="Gwati Earring",
@@ -136,7 +136,7 @@ function init_gear_sets()
 	sets.precast.Flourish1['Desperate Flourish'] =  set_combine(sets.precast.Flourish1,  {ammo="Charis Feather",
 		head="Mummu Bonnet +1",
 		body="Samnuha Coat",hands="Mummu Wrists +1",ring1="Varar Ring",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Mummu Kecks +1",feet="Mummu Gamashes +1"}) -- acc gear
+		back="Senuna's Mantle",waist="Windbuffet Belt +1",legs="Mummu Kecks +1",feet="Mummu Gamashes +1"}) -- acc gear
 
 	sets.precast.Flourish1['Animated Flourish'] = sets.enmity
 
@@ -147,7 +147,7 @@ function init_gear_sets()
 
 	--Flourish3
 	sets.precast.Flourish3 = {ammo="Honed Tathlum",
-	waist="Kentarch Belt",back="Archon Mantle",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1"}
+	waist="Windbuffet Belt +1",back="Archon Mantle",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1"}
 	
 	sets.precast.Flourish3['Striking Flourish'] =  set_combine(sets.precast.Flourish3,   {body="Maculele Casaque"})
 	sets.precast.Flourish3['Climactic Flourish'] =  set_combine(sets.precast.Flourish3,   {head="Maculele Tiara"})
@@ -166,18 +166,18 @@ function init_gear_sets()
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Charis Feather",
-		head="Mummu Bonnet +1",neck="Asperity Necklace",ear1="Digni. Earring",ear2="Bladeborn Earring",
-		body="Taeon Tabard",hands="Mummu Wrists +1",ring1="Ramuh Ring +1",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Mummu Kecks +1",feet="Mummu Gamashes +1"}
-	sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Honed Tathlum", back="Atheling Mantle"})
+		head="Mummu Bonnet +1",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Moonshade Earring",
+		body={ name="Rawhide Vest", augments={'HP+50','"Subtle Blow"+7','"Triple Atk."+2',}},hands="Mummu Wrists +1",ring1="Ramuh Ring +1",ring2="Epona's Ring",
+		back="Senuna's Mantle",waist="Windbuffet Belt +1",legs="Mummu Kecks +1",feet="Mummu Gamashes +1"}
+	sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Honed Tathlum", back="Senuna's Mantle"})
 
 	gear.default.weaponskill_neck = "Asperity Necklace"
-	gear.default.weaponskill_waist = "Kentarch Belt"
+	gear.default.weaponskill_waist = "Windbuffet Belt +1"
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {hands="Mummu Wrists +1",head="Mummu Bonnet +1",
 		ring1="Garuda Ring",ring2="Garuda Ring",legs="Samnuha Tights"})
-	sets.precast.WS['Exenterator'].Acc = set_combine(sets.precast.WS['Exenterator'], {ammo="Honed Tathlum", back="Atheling Mantle"})
+	sets.precast.WS['Exenterator'].Acc = set_combine(sets.precast.WS['Exenterator'], {ammo="Honed Tathlum", back="Senuna's Mantle"})
 	sets.precast.WS['Exenterator'].Mod = set_combine(sets.precast.WS['Exenterator'], {body="Rawhide Vest",waist="Fotia Belt"})
 
 	sets.precast.WS['Pyrrhic Kleos'] = set_combine(sets.precast.WS, {hands="Mummu Wrists +1"})
@@ -185,12 +185,12 @@ function init_gear_sets()
 
 	sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {ammo="Charis Feather",head="Mummu Bonnet +1",waist="Wanion Belt",
 	back="Rancorous Mantle",legs="Samnuha Tights",hands="Buremte Gloves"})
-	sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS['Evisceration'], {ammo="Honed Tathlum", back="Atheling Mantle"})
+	sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS['Evisceration'], {ammo="Honed Tathlum", back="Senuna's Mantle"})
 	sets.precast.WS['Evisceration'].Mod = set_combine(sets.precast.WS['Evisceration'], {body="Maxixi Casaque",waist="Fotia Belt"})
 
-	sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {ammo="Charis Feather",head="Mummu Bonnet +1",neck="Fotia Gorget",
+	sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {ammo="Charis Feather",head="Mummu Bonnet +1",neck="Fotia Gorget",ear1="Ishvara Earring",
 	hands="Buremte Gloves",ring2="Ramuh Ring +1",back="Rancorous Mantle",legs="Samnuha Tights",waist="Fotia Belt"})
-	sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS["Rudra's Storm"], {ammo="Honed Tathlum", back="Atheling Mantle"})
+	sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS["Rudra's Storm"], {ammo="Honed Tathlum", back="Senuna's Mantle"})
 
 	sets.precast.WS['Aeolian Edge'] = {ammo="Charis Feather",
 		head="Thaumas Hat",neck="Sancitity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
@@ -227,20 +227,20 @@ function init_gear_sets()
 
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
-	sets.idle.Town = {main="Polyhymnia",sub="Leisilonu +2",ammo="Honed Tathlum",
+	sets.idle.Town = {main="Skinflayer",sub="Polyhymnia",ammo="Ginsen",
 		head="Mummu Bonnet +1",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Qaaxo Harness",hands="Mummu Wrists +1",ring1="Ramuh Ring +1",ring2="Defending Ring",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Tandava Crackows"}--Atoyac/Uk'uxkaj Cap
+		body={ name="Rawhide Vest", augments={'HP+50','"Subtle Blow"+7','"Triple Atk."+2',}},hands="Mummu Wrists +1",ring1="Ramuh Ring +1",ring2="Defending Ring",
+		back="Senuna's Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Tandava Crackows"}--Atoyac/Uk'uxkaj Cap
 
-	sets.idle.Field = {ammo="Honed Tathlum",
+	sets.idle.Field = {ammo="Ginsen",
 		head="Mummu Bonnet +1",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Qaaxo Harness",hands="Mummu Wrists +1",ring1="Ramuh Ring +1",ring2="Defending Ring",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Tandava Crackows"}
+		body={ name="Rawhide Vest", augments={'HP+50','"Subtle Blow"+7','"Triple Atk."+2',}},hands="Mummu Wrists +1",ring1="Ramuh Ring +1",ring2="Defending Ring",
+		back="Senuna's Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Tandava Crackows"}
 
-	sets.idle.Weak = {ammo="Honed Tathlum",
+	sets.idle.Weak = {ammo="Ginsen",
 		head="Mummu Bonnet +1",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Qaaxo Harness",hands="Mummu Wrists +1",ring1="Dark Ring",ring2="Defending Ring",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Tandava Crackows"}
+		body={ name="Rawhide Vest", augments={'HP+50','"Subtle Blow"+7','"Triple Atk."+2',}},hands="Mummu Wrists +1",ring1="Dark Ring",ring2="Defending Ring",
+		back="Senuna's Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Tandava Crackows"}
 
 	-- Defense sets
 
@@ -269,26 +269,26 @@ function init_gear_sets()
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 
 	-- Normal melee group
-	sets.engaged = {ammo="Honed Tathlum",
+	sets.engaged = {ammo="Ginsen",
 		head="Mummu Bonnet +1",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Qaaxo Harness",hands="Mummu Wrists +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Horos Shoes +1"}--Horos Shoes +1
-	sets.engaged.iLvl = {ammo="Honed Tathlum",
+		body={ name="Rawhide Vest", augments={'HP+50','"Subtle Blow"+7','"Triple Atk."+2',}},hands="Mummu Wrists +1",ring1="Rajas Ring",ring2="Epona's Ring",
+		back="Senuna's Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Horos Shoes +1"}--Horos Shoes +1
+	sets.engaged.iLvl = {ammo="Ginsen",
 		head="Mummu Bonnet +1",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Qaaxo Harness",hands="Mummu Wrists +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Mummu Kecks +1",feet="Horos Shoes +1"}
+		body={ name="Rawhide Vest", augments={'HP+50','"Subtle Blow"+7','"Triple Atk."+2',}},hands="Mummu Wrists +1",ring1="Rajas Ring",ring2="Epona's Ring",
+		back="Senuna's Mantle",waist="Windbuffet Belt +1",legs="Mummu Kecks +1",feet="Horos Shoes +1"}
 	sets.engaged.Acc = {ammo="Honed Tathlum",
 		head="Dampening Tam",neck="Ej Necklace",ear1="Digni. Earring",ear2="Zennaroi Earring",
 		body="Samnuha Coat",hands="Leyline Gloves",ring1="Varar Ring",ring2="Varar Ring",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Mummu Gamashes +1"}
-	sets.engaged.Evasion = {ammo="Honed Tathlum",
+		back="Senuna's Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Mummu Gamashes +1"}
+	sets.engaged.Evasion = {ammo="Ginsen",
 		head="Mummu Bonnet +1",neck="Ej Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
 		body="Emet Harness +1",hands="Mummu Wrists +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Horos Shoes +1"}
+		back="Senuna's Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Horos Shoes +1"}
 	sets.engaged.Acc.Evasion = {ammo="Honed Tathlum",
 		head="Dampening Tam",neck="Ej Necklace",ear1="Digni. Earring",ear2="Zennaroi Earring",
 		body="Emet Harness +1",hands="Leyline Gloves",ring1="Varar Ring",ring2="Varar Ring",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Mummu Gamashes +1"}
+		back="Senuna's Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Mummu Gamashes +1"}
 	sets.engaged.PDT = {ammo="Charis Feather",
 		head="Mummu Bonnet +1",neck="Twilight Torque",ear1="Steelflash Earring",ear2="Bladeborn Earring",
 		body="Emet Harness +1",hands="Mummu Wrists +1",ring1="Dark Ring",ring2="Epona's Ring",
@@ -296,25 +296,25 @@ function init_gear_sets()
 	sets.engaged.Acc.PDT = {ammo="Honed Tathlum",
 		head="Dampening Tam",neck="Twilight Torque",ear1="Steelflash Earring",ear2="Bladeborn Earring",
 		body="Emet Harness +1",hands="Mummu Wrists +1",ring1="Dark Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Hurch'lan Sash",legs="Samnuha Tights",feet="Mummu Gamashes +1"}
+		back="Senuna's Mantle",waist="Hurch'lan Sash",legs="Samnuha Tights",feet="Mummu Gamashes +1"}
 
 	-- Custom melee group: High Haste
-	sets.engaged.HighHaste = {ammo="Honed Tathlum",
+	sets.engaged.HighHaste = {ammo="Ginsen",
 		head="Mummu Bonnet +1",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Qaaxo Harness",hands="Mummu Wrists +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Horos Shoes +1"}
+		body={ name="Rawhide Vest", augments={'HP+50','"Subtle Blow"+7','"Triple Atk."+2',}},hands="Mummu Wrists +1",ring1="Rajas Ring",ring2="Epona's Ring",
+		back="Senuna's Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Horos Shoes +1"}
 	sets.engaged.Acc.HighHaste = {ammo="Honed Tathlum",
 		head="Dampening Tam",neck="Ej Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
 		body="Samnuha Coat",hands="Mummu Wrists +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Mummu Gamashes +1"}
+		back="Senuna's Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Mummu Gamashes +1"}
 	sets.engaged.Evasion.HighHaste = {ammo="Charis Feather",
 		head="Mummu Bonnet +1",neck="Torero Torque",ear1="Steelflash Earring",ear2="Bladeborn Earring",
 		body="Emet Harness +1",hands="Mummu Wrists +1",ring1="Varar Ring",ring2="Epona's Ring",
 		back="Ik Cape",waist="Patentia Sash",legs="Samnuha Tights",feet="Horos Shoes +1"}
-	sets.engaged.Acc.Evasion.HighHaste = {ammo="Honed Tathlum",
+	sets.engaged.Acc.Evasion.HighHaste = {ammo="Ginsen",
 		head="Dampening Tam",neck="Torero Torque",ear1="Steelflash Earring",ear2="Bladeborn Earring",
 		body="Emet Harness +1",hands="Mummu Wrists +1",ring1="Varar Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Hurch'lan Sash",legs="Samnuha Tights",feet="Mummu Gamashes +1"}
+		back="Senuna's Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Mummu Gamashes +1"}
 	sets.engaged.PDT.HighHaste = {ammo="Charis Feather",
 		head="Mummu Bonnet +1",neck="Twilight Torque",ear1="Steelflash Earring",ear2="Bladeborn Earring",
 		body="Emet Harness +1",hands="Mummu Wrists +1",ring1="Patricius Ring",ring2="Epona's Ring",
@@ -322,33 +322,33 @@ function init_gear_sets()
 	sets.engaged.Acc.PDT.HighHaste = {ammo="Honed Tathlum",
 		head="Dampening Tam",neck="Twilight Torque",ear1="Steelflash Earring",ear2="Bladeborn Earring",
 		body="Emet Harness +1",hands="Mummu Wrists +1",ring1="Patricius Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Hurch'lan Sash",legs="Mummu Kecks +1",feet="Mummu Gamashes +1"}
+		back="Senuna's Mantle",waist="Hurch'lan Sash",legs="Mummu Kecks +1",feet="Mummu Gamashes +1"}
 
 	-- Custom melee group: Max Haste
-	sets.engaged.MaxHaste = {ammo="Honed Tathlum",
+	sets.engaged.MaxHaste = {ammo="Ginsen",
 		head="Mummu Bonnet +1",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Qaaxo Harness",hands="Mummu Wrists +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Horos Shoes +1"}
+		body={ name="Rawhide Vest", augments={'HP+50','"Subtle Blow"+7','"Triple Atk."+2',}},hands="Mummu Wrists +1",ring1="Rajas Ring",ring2="Epona's Ring",
+		back="Senuna's Mantle",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Horos Shoes +1"}
 	sets.engaged.Acc.MaxHaste = {ammo="Honed Tathlum",
-		head="Dampening Tam",neck="Ej Necklace",ear1="Bladeborn Earring",ear2="Digni. Earring",
+		head="Dampening Tam",neck="Ej Necklace",ear2="Bladeborn Earring",ear1="Digni. Earring",
 		body="Samnuha Coat",hands="Mummu Wrists +1",ring1="Rajas Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Mummu Gamashes +1"}
+		back="Senuna's Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Mummu Gamashes +1"}
 	sets.engaged.Evasion.MaxHaste = {ammo="Charis Feather",
-		head="Mummu Bonnet +1",neck="Torero Torque",ear1="Bladeborn Earring",ear2="Digni. Earring",
+		head="Mummu Bonnet +1",neck="Torero Torque",ear2="Bladeborn Earring",ear1="Digni. Earring",
 		body="Emet Harness +1",hands="Mummu Wrists +1",ring1="Varar Ring",ring2="Epona's Ring",
 		back="Ik Cape",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Horos Shoes +1"}
 	sets.engaged.Acc.Evasion.MaxHaste = {ammo="Honed Tathlum",
-		head="Dampening Tam",neck="Torero Torque",ear1="Bladeborn Earring",ear2="Digni. Earring",
+		head="Dampening Tam",neck="Torero Torque",ear2="Bladeborn Earring",ear1="Digni. Earring",
 		body="Emet Harness +1",hands="Mummu Wrists +1",ring1="Varar Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Hurch'lan Sash",legs="Samnuha Tights",feet="Mummu Gamashes +1"}
+		back="Senuna's Mantle",waist="Kentarch Belt",legs="Samnuha Tights",feet="Mummu Gamashes +1"}
 	sets.engaged.PDT.MaxHaste = {ammo="Charis Feather",
-		head="Mummu Bonnet +1",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Digni. Earring",
+		head="Mummu Bonnet +1",neck="Twilight Torque",ear2="Bladeborn Earring",ear1="Digni. Earring",
 		body="Emet Harness +1",hands="Mummu Wrists +1",ring1="Patricius Ring",ring2="Epona's Ring",
 		back="Shadow Mantle",waist="Windbuffet Belt +1",legs="Mummu Kecks +1",feet="Mummu Gamashes +1"}
 	sets.engaged.Acc.PDT.MaxHaste = {ammo="Honed Tathlum",
-		head="Dampening Tam",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Digni. Earring",
+		head="Dampening Tam",neck="Twilight Torque",ear2="Bladeborn Earring",ear1="Digni. Earring",
 		body="Emet Harness +1",hands="Mummu Wrists +1",ring1="Patricius Ring",ring2="Epona's Ring",
-		back="Atheling Mantle",waist="Hurch'lan Sash",legs="Mummu Kecks +1",feet="Mummu Gamashes +1"}
+		back="Senuna's Mantle",waist="Hurch'lan Sash",legs="Mummu Kecks +1",feet="Mummu Gamashes +1"}
 
 
 

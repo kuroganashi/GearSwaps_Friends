@@ -73,26 +73,30 @@ function init_gear_sets()
        
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="Vanir Battery",neck="Subtlety Spectacles",ear1="Brutal Earring",ear2="Psystorm Earring",ring1="Enlivened Ring",ring2="Ramuh Ring +1",waist="Caudata Belt",back="Atheling Mantle",head="Aetosaur Helm +1",body="Karmesin Vest",hands="Umuthi Gloves",legs="Vitivation Tights +1",feet="Atrophy Boots +1"}
+    sets.precast.WS = {ammo="Ginsen",neck="Subtlety Spectacles",ear1="Brutal Earring",ear2="Moonshade Earring",ring1="Enlivened Ring",ring2="Ramuh Ring +1",waist="Caudata Belt",back="Atheling Mantle",head="Aya. Zucchetto +1",body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {ammo="Vanir Battery",ear1="Brutal Earring",ear2="Lifestorm Earring",
-		head="Atrophy Chapeau +1",body="Lethargy Sayon",hands="Lurid Mitts",neck="Imbodla Necklace",ring1="Leviathan Ring +1",ring2="Leviathan Ring +1",legs="Psycloth Lappas",
-		waist="Ovate Rope",back="Refraction Cape"})
+    sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {ammo="Ginsen",ear1="Brutal Earring",ear2="Moonshade Earring",
+		head="Jhakri Coronal +1",body="Jhakri Robe",hands="Jhakri Cuffs +1",neck="Imbodla Necklace",ring1="Leviathan Ring +1",ring2="Leviathan Ring +1",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1",waist="Ovate Rope",back="Refraction Cape"})
 
     sets.precast.WS['Sanguine Blade'] = {ammo="Kalboron Stone",ear1="Friomisi Earring",
 		ear2="Hecate's Earring",
-		head="Hagondes Hat",neck="Quanpur Necklace",body="Hagondes Coat",hands="Amalric Gages",
+		head="Merlinic Hood",neck="Quanpur Necklace",body="Jhakri Robe",hands="Amalric Gages",
 		back="Ghostfyre Cape",legs="Merlinic Shalwar",feet="Merlinic Crackows",ring1="Fenrir Ring",ring2="Fenrir Ring"}
 
-	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS,  {ammo="Brigantia Pebble",neck="Subtlety Spectacles",ear1="Brutal Earring",ear2="Psystorm Earring",ring1="Enlivened Ring",ring2="Ramuh Ring +1",waist="Caudata Belt",back="Atheling Mantle",
-	head="Aetosaur Helm +1",body="Karmesin Vest",hands="Umuthi Gloves",legs="Vitivation Tights +1",feet="Atrophy Boots +1"})
+	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS,  {ammo="Brigantia Pebble",neck="Subtlety Spectacles",ear1="Ishvara Earring",ear2="Moonshade Earring",ring1="Enlivened Ring",ring2="Ramuh Ring +1",waist="Caudata Belt",back="Atheling Mantle",hands="Jhakri Cuffs +1"
+	})
     
-	sets.precast.WS['Death Blossom'] = set_combine(sets.precast.WS,  {ammo="Brigantia Pebble",neck="Subtlety Spectacles",ear1="Brutal Earring",ear2="Psystorm Earring",ring1="Enlivened Ring",ring2="Ramuh Ring +1",waist="Caudata Belt",back="Kayapa Cape",
-	head="Aetosaur Helm +1",body="Karmesin Vest",hands="Umuthi Gloves",legs="Vitivation Tights +1",feet="Atrophy Boots +1"})
+	sets.precast.WS['Death Blossom'] = set_combine(sets.precast.WS,  {ammo="Brigantia Pebble",neck="Subtlety Spectacles",ear1="Brutal Earring",ear2="Moonshade Earring",ring1="Enlivened Ring",ring2="Ramuh Ring +1",waist="Caudata Belt",back="Kayapa Cape",
+	})
 	
-	sets.precast.WS['Knights of Round'] = set_combine(sets.precast.WS,  {ammo="Brigantia Pebble",neck="Subtlety Spectacles",ear1="Brutal Earring",ear2="Psystorm Earring",ring1="Enlivened Ring",ring2="Ramuh Ring +1",waist="Caudata Belt",back="Kayapa Cape",
-	head="Aetosaur Helm +1",body="Karmesin Vest",hands="Umuthi Gloves",legs="Vitivation Tights +1",feet="Atrophy Boots +1"})
+	sets.precast.WS['Knights of Round'] = set_combine(sets.precast.WS,  {ammo="Brigantia Pebble",neck="Subtlety Spectacles",ear1="Ishvara Earring",ear2="Moonshade Earring",ring1="Enlivened Ring",ring2="Ramuh Ring +1",waist="Caudata Belt",back="Kayapa Cape",head="Jhakri Coronal +1",body="Jhakri Robe",hands="Jhakri Cuffs +1",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"})
+
+	--Aya. Zucchetto +1
+	--Ayanmo Corazza +1
+	--Aya. Manopolas +1
+	--Aya. Cosciales +1
+	--Aya. Gambieras +1
 	
     -- Midcast Sets
     
@@ -140,8 +144,8 @@ function init_gear_sets()
     sets.midcast['Slow II'] = set_combine(sets.midcast['Enfeebling Magic'], {head="Vitivation Chapeau +1"})
     
     sets.midcast['Elemental Magic'] = {ammo="Dosis Tathlum",
-		head="Hagondes Hat",neck="Quanpur Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
-		body="Hagondes Coat",hands="Amalric Gages",ring2="Fenrir Ring",ring1="Fenrir Ring",
+		head="Merlinic Hood",neck="Mizukage-no-Kubikazari",ear1="Friomisi Earring",ear2="Hecate's Earring",
+		body="Merlinic Jubbah",hands="Amalric Gages",ring2="Mujin Band",ring1="Locus Ring",
 		back="Ghostfyre Cape",waist="Salire Belt",legs="Merlinic Shalwar",feet="Merlinic Crackows"}
         
 	sets.magic_burst = {neck="Mizukage-no-Kubikazari",ring1="Locus Ring",ring2="Mujin Band"}	
@@ -149,9 +153,9 @@ function init_gear_sets()
     sets.midcast.Impact = set_combine(sets.midcast['Elemental Magic'], {head=empty,body="Twilight Cloak"})
 
     sets.midcast['Dark Magic'] = {ammo="Dosis Tathlum",
-		head="Lethargy Chappel",neck="Quanpur Necklace",ear1="Lifestorm Earring",ear2="Psystorm Earring",
-		body="Atrophy Tabard +1",hands="Amalric Gages",ring1="Weatherspoon Ring",ring2="Fenrir Ring",
-		back="Ghostfyre Cape",waist="Salire Belt",legs="Merlinic Shalwar",feet="Merlinic Crackows"}
+		head="Jhakri Coronal +1",neck="Quanpur Necklace",ear1="Lifestorm Earring",ear2="Psystorm Earring",
+		body="Merlinic Jubbah",hands="Amalric Gages",ring1="Weatherspoon Ring",ring2="Fenrir Ring",
+		back="Ghostfyre Cape",waist="Salire Belt",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"}
 
 		sets.midcast.Stun = set_combine(sets.midcast['Dark Magic'], {hands="Gende. Gages +1",back="Swith Cape",waist="Witful Belt"})
 
@@ -174,51 +178,51 @@ function init_gear_sets()
     -- Sets to return to when not performing an action.
     
     -- Resting sets
-    sets.resting = {ammo="Impatiens",
+    sets.resting = {ammo="Ginsen",
 		head="Vitivation Chapeau +1",neck="Arciela's Grace +1",ear1="Estq. Earring",ear2="Loquacious Earring",
-		body="Vitivation Tabard +1",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Prolix Ring",
+		body="Jhakri Robe",hands="Serpentes Cuffs",ring1="Defending Ring",ring2="Prolix Ring",
 		back="Shadow Mantle",waist="Fucho-No-Obi",legs="Nares Trews",feet="Serpentes Sabots"}
     
 
     -- Idle sets
-    sets.idle = {ammo="Impatiens",
+    sets.idle = {ammo="Ginsen",
 		head="Vitivation Chapeau +1",neck="Twilight Torque",ear1="Estq. Earring",ear2="Loquacious Earring",
-		body="Vitivation Tabard +1",hands="Vitivation Gloves +1",ring1="Defending Ring",ring2="Prolix Ring",
-		back="Repulse Mantle",waist="Pya'ekue Belt",legs="Vitivation Tights +1",feet="Vitivation Boots +1"}--Homiliary/Fucho-No-Obi
+		body="Jhakri Robe",hands="Vitivation Gloves +1",ring1="Defending Ring",ring2="Prolix Ring",
+		back="Repulse Mantle",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Vitivation Boots +1"}--Homiliary/Fucho-No-Obi
 
-    sets.idle.Town = {main="Excalibur",sub="Beatific Shield",ammo="Impatiens",
+    sets.idle.Town = {main="Excalibur",sub="Beatific Shield",ammo="Ginsen",
 		head="Vitivation Chapeau +1",neck="Twilight Torque",ear1="Estq. Earring",ear2="Loquacious Earring",
-		body="Vitivation Tabard +1",hands="Vitivation Gloves +1",ring1="Defending Ring",ring2="Prolix Ring",
-		back="Repulse Mantle",waist="Pya'ekue Belt",legs="Vitivation Tights +1",feet="Vitivation Boots +1"}
+		body="Jhakri Robe",hands="Vitivation Gloves +1",ring1="Defending Ring",ring2="Prolix Ring",
+		back="Repulse Mantle",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Vitivation Boots +1"}
     
-    sets.idle.Weak = {ammo="Impatiens",
+    sets.idle.Weak = {ammo="Ginsen",
 		head="Vitivation Chapeau +1",neck="Twilight Torque",ear1="Estq. Earring",ear2="Loquacious Earring",
-		body="Vitivation Tabard +1",hands="Vitivation Gloves +1",ring1="Defending Ring",ring2="Prolix Ring",
-		back="Repulse Mantle",waist="Pya'ekue Belt",legs="Vitivation Tights +1",feet="Vitivation Boots +1"}
+		body="Jhakri Robe",hands="Vitivation Gloves +1",ring1="Defending Ring",ring2="Prolix Ring",
+		back="Repulse Mantle",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Vitivation Boots +1"}
 
     sets.idle.PDT = {ammo="Demonry Stone",
-        head="Gendewitha Caubeen",neck="Twilight Torque",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Gendewitha Bliaut +1",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
-        back="Repulse Mantle",waist="Flume Belt",legs="Osmium Cuisses",feet="Gendewitha Galoshes"}
+        head="Aya. Zucchetto +1",neck="Twilight Torque",ear1="Bloodgem Earring",ear2="Loquacious Earring",
+        body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Defending Ring",ring2="Dark Ring",
+        back="Repulse Mantle",waist="Flume Belt",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
 
     sets.idle.MDT = {ammo="Demonry Stone",
         head="Gendewitha Caubeen +1",neck="Twilight Torque",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Gendewitha Caubeen +1",hands="Amalric Gages",ring1="Defending Ring",ring2="Shadow Ring",
-        back="Repulse Mantle",waist="Flume Belt",legs="Osmium Cuisses",feet="Gendewitha Galoshes"}
+        body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Defending Ring",ring2="Shadow Ring",
+        back="Repulse Mantle",waist="Flume Belt",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
     
     
     -- Defense sets
     sets.defense.PDT = {
-		head="Hagondes Hat",neck="Twilight Torque",ear1="Estq. Earring",ear2="Loquacious Earring",
-		body="Vitivation Tabard +1",hands="Amalric Gages",ring2="Dark Ring",ring1="Defending Ring",
-		back="Repulse Mantle",waist="Flume Belt",legs="Osmium Cuisses",feet="Merlinic Crackows"}
+		head="Aya. Zucchetto +1",neck="Twilight Torque",ear1="Estq. Earring",ear2="Loquacious Earring",
+		body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring2="Dark Ring",ring1="Defending Ring",
+		back="Repulse Mantle",waist="Flume Belt",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
 
     sets.defense.MDT = {ammo="Demonry Stone",
         head="Atrophy Chapeau +1",neck="Twilight Torque",ear1="Bloodgem Earring",ear2="Loquacious Earring",
-        body="Atrophy Tabard +1",hands="Amalric Gages",ring1="Defending Ring",ring2="Shadow Ring",
-        back="Repulse Mantle",waist="Flume Belt",legs="Bokwus Slops",feet="Gendewitha Galoshes"}
+        body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Defending Ring",ring2="Shadow Ring",
+        back="Repulse Mantle",waist="Flume Belt",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
 
-    sets.Kiting = {legs="Blood Cuisses"}
+    sets.Kiting = {legs="Carmine Cuisses +1"}
 
     sets.latent_refresh = {waist="Fucho-no-obi"}
 
@@ -229,22 +233,28 @@ function init_gear_sets()
     -- If you create a set with both offense and defense modes, the offense mode should be first.
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
     
+	--Aya. Zucchetto +1
+	--Ayanmo Corazza +1
+	--Aya. Manopolas +1
+	--Aya. Cosciales +1
+	--Aya. Gambieras +1
+	
     -- Normal melee group
-    sets.engaged = {ammo="Vanir Battery",
-		head="Vitivation Chapeau +1",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Vitivation Tabard +1",hands="Vitivation Gloves +1",ring1="Rajas Ring",ring2="Ramuh Ring +1",
-		back="Atheling Mantle",waist="Pya'ekue Belt",legs="Vitivation Tights +1",feet="Vitivation Boots +1"}
+    sets.engaged = {ammo="Ginsen",
+		head="Aya. Zucchetto +1",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+		body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Rajas Ring",ring2="Ramuh Ring +1",
+		back="Atheling Mantle",waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}--Pya'ekue Belt
 
-	sets.engaged.Acc = {ammo="Vanir Battery",
-		head="Vitivation Chapeau +1",neck="Subtlety Spectacles",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Vitivation Tabard +1",hands="Vitivation Gloves +1",ring1="Rajas Ring",ring2="Ramuh Ring +1",
-		back="Atheling Mantle",waist="Kentarch Belt",legs="Vitivation Tights +1",feet="Vitivation Boots +1"}
+	sets.engaged.Acc = {ammo="Ginsen",
+		head="Aya. Zucchetto +1",neck="Subtlety Spectacles",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+		body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Rajas Ring",ring2="Ramuh Ring +1",
+		back="Atheling Mantle",waist="Kentarch Belt",legs="Carmine Cuisses +1",feet="Aya. Gambieras +1"}
 
 		
-    sets.engaged.Defense = {ammo="Vanir Battery",
-		head="Vitivation Chapeau +1",neck="Twilight Torque",ear1="Estq. Earring",ear2="Loquacious Earring",
-		body="Vitivation Tabard +1",hands="Vitivation Gloves +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Repulse Mantle",waist="Pya'ekue Belt",legs="Vitivation Tights +1",feet="Vitivation Boots +1"}
+    sets.engaged.Defense = {ammo="Ginsen",
+		head="Aya. Zucchetto +1",neck="Twilight Torque",ear1="Estq. Earring",ear2="Loquacious Earring",
+		body="Ayanmo Corazza +1",hands="Aya. Manopolas +1",ring1="Defending Ring",ring2="Dark Ring",
+		back="Repulse Mantle",waist="Windbuffet Belt +1",legs="Aya. Cosciales +1",feet="Aya. Gambieras +1"}
 
 end
 
